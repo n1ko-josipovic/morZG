@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/x-png" href="public/res/logo.png" />
+  <title>Morseov Koder/Dekoder</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card input-wrapper">
+      <div class="from">
+        <div class="missive-container" id="input">
+          <div class="missive-subcontainer">
+            <img src="public/res/writing.png" />
+            <span class="selected" data-value="en">Latinski</span>
+
+          </div>
+        </div>
+      </div>
+      <div class="text-area">
+        <textarea id="input-text" cols="30" rows="10" placeholder="Upiši tekst / kod"></textarea>
+      </div>
+      <div class="card-bottom">
+        <p>Učitaj datoteku koju želiš prevesti!</p>
+        <label for="upload-document">
+          <span id="upload-title">Odaberi datoteku </span>
+          <ion-icon name="cloud-upload-outline"></ion-icon>
+          <input type="file" id="upload-document" hidden />
+        </label>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="swap-position" onclick=" swapFunction()">
+        <ion-icon name="swap-horizontal-outline"></ion-icon>
+      </div>
+    </div>
+
+    <div class="card output-wrapper">
+      <div class="to">
+        <div class="missive-container" id="output">
+          <div class="missive-subcontainer">
+            <img src="public/res/morse-code.png" />
+            <span class="selected" data-value="auto">Morseov Kod</span>
+          </div>
+        </div>
+      </div>
+      <textarea id="output-text" cols="30" rows="10" placeholder="Ispis će se pojaviti ovdje" disabled></textarea>
+      <div class="card-bottom">
+        <p>Preuzemi svoj prijevod kao datoteku!</p>
+        <button id="download-btn">
+          <span>Preuzmi </span>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script/dictionary.js"></script>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
