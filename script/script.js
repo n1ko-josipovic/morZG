@@ -41,19 +41,8 @@ function swapFunction()
 
   startTranslate();
 
-  toggleRotation();
-}
-
-function toggleRotation()
-{
-  const element = document.querySelector('.swap-position .material-symbols-outlined');
-  const style = window.getComputedStyle(element);
-  const matrix = new WebKitCSSMatrix(style.transform);
-  const currentRotation = Math.atan2(matrix.m21, matrix.m11) * (180 / Math.PI);
-  const newRotation = (currentRotation + 180) % 360;
-
-  // Primjenjuje novu rotaciju
-  element.style.transform = `rotate(${newRotation}deg)`;
+  const element = document.querySelector('.swap-position');
+  element.classList.toggle('rotated');
 }
 
 document.getElementById('input-text').addEventListener('input', function ()
