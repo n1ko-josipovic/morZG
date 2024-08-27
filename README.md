@@ -1,7 +1,7 @@
 # [Morseov Koder/Dekoder](https://n1ko-josipovic.github.io/morse-code/)
-https://github.com/n1ko-josipovic/morse-code/blob/main/public/files/about.pdf
+
 <div align="center">
-  <img alt="banner" src="https://github.com/n1ko-josipovic/main/blob/main/public/res/banner.png">
+  <img alt="banner" src="https://github.com/n1ko-josipovic/morse-code/blob/main/public/res/WEB%20stranica.png">
 </div>
 
 ## O projektu
