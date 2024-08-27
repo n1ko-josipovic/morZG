@@ -1,20 +1,12 @@
-isInputLatin = 1;
-
-function startTranslate()
+document.getElementById('input-text').addEventListener('input', function ()
 {
-  const inputTextElement = document.getElementById('input-text');
-  if (isInputLatin)
-  {
-    encodeText(inputTextElement.value);
-  } else
-  {
-    decodeMorseCode(inputTextElement.value);
-  }
-}
+  startTranslate();
+});
 
+isInputLatin = 1;
 function swapFunction()
 {
-  isInputLatin = 1 - isInputLatin; // Damn, I love this line of code
+  isInputLatin = 1 - isInputLatin; // I love this line of code
 
   const inputElement = document.getElementById('input').querySelector('.selected');
   const outputElement = document.getElementById('output').querySelector('.selected');
@@ -22,18 +14,15 @@ function swapFunction()
   const inputTextElement = document.getElementById('input-text');
   const outputTextElement = document.getElementById('output-text');
 
-  const tempLanguage = inputElement.textContent;
-  const tempDataValue = inputElement.getAttribute('data-value');
+  const tempContent = inputElement.innerHTML;
   const tempImageSrc = document.getElementById('input').querySelector('img').src;
 
   const tempText = inputTextElement.value;
 
-  inputElement.textContent = outputElement.textContent;
-  inputElement.setAttribute('data-value', outputElement.getAttribute('data-value'));
+  inputElement.innerHTML = outputElement.innerHTML;
   document.getElementById('input').querySelector('img').src = document.getElementById('output').querySelector('img').src;
 
-  outputElement.textContent = tempLanguage;
-  outputElement.setAttribute('data-value', tempDataValue);
+  outputElement.innerHTML = tempContent;
   document.getElementById('output').querySelector('img').src = tempImageSrc;
 
   inputTextElement.value = outputTextElement.value;
@@ -44,19 +33,6 @@ function swapFunction()
   const element = document.querySelector('.swap-position');
   element.classList.toggle('rotated');
 }
-
-document.getElementById('input-text').addEventListener('input', function ()
-{
-  const inputValue = this.value;
-
-  if (isInputLatin)
-  {
-    encodeText(inputValue);
-  } else
-  {
-    decodeMorseCode(inputValue);
-  }
-});
 
 
 function encodeText(text)
@@ -79,12 +55,10 @@ function encodeText(text)
   let encodedText = encodedWords.join("   ");
 
   const outputTextElement = document.getElementById('output-text');
-  outputTextElement.value = encodedText.trim();
+  outputTextElement.value = encodedText;
 
   return encodedText;
 }
-
-
 
 function decodeMorseCode(morseCode)
 {
@@ -95,7 +69,7 @@ function decodeMorseCode(morseCode)
     const wordWithStandardSymbols = word.split(" ").map((symbol) =>
     {
       // Pretvorba Morseovog simbola u latinski znak
-      return dictionary[symbol] || ''; // Koristi razmak ako simbol nije pronađen u rječniku
+      return dictionary[symbol] || ''; // Koristi prazni string ako simbol nije pronađen u rječniku
     }).join(""); // Spajanje znakova u riječ
 
     return wordWithStandardSymbols;
@@ -167,3 +141,15 @@ downloadBtn.addEventListener("click", (e) =>
     a.click();
   }
 });
+
+function startTranslate()
+{
+  const inputTextElement = document.getElementById('input-text');
+  if (isInputLatin)
+  {
+    encodeText(inputTextElement.value);
+  } else
+  {
+    decodeMorseCode(inputTextElement.value);
+  }
+}
