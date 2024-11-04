@@ -21,7 +21,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--card-bg-color);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -111,7 +111,7 @@ textarea {
   margin: 20px 0;
   background-color: var(--hover-color);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 6px;
   resize: none;
   outline: none;
   color: var(--text-color);
