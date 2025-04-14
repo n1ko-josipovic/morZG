@@ -1,16 +1,12 @@
 # [Morseov Koder/Dekoder](https://n1ko-josipovic.github.io/morse-code/)
 
-<div align="center">
-  <img alt="banner" src="https://github.com/n1ko-josipovic/morse-code/blob/main/public/res/WEB%20stranica.png">
-</div>
+## O projektu 
+  Ovaj seminarski rad za cilj je imao razviti softversku aplikaciju za kodiranje i dekodiranje Morseova koda, u sklopu predmeta Uvod u računalne mreže. Aplikacija je implementirana korištenjem programskog jezika JavaScript, uz HTML i CSS za stvaranje korisničkog sučelja i poboljšanje vizualnog dizajna. Za više informacija preuzmite <a href="https://github.com/n1ko-josipovic/morse-code/blob/main/public/files/about.pdf" target="_blank">dokument</a> ...
 
-## O projektu
-  Cilj seminarskog rada je bilo izraditi softver za Morseovo kodiranje i dekodiranje. 
-  
-  Softver je implementiran u programskom jeziku JavaScript. Uz JavaScript koriste se i HTML i CSS za dodatne funkcionalnosti i poboljšanje dizajna. Za više informacija preuzmite <a href="https://github.com/n1ko-josipovic/morse-code/blob/main/public/files/about.pdf" target="_blank">dokument</a> ...
-
-<span style="color:grey">Niko Josipović, učenik II. razreda Tehničke škole Ruđera Boškovića</span>
+<span style="color:grey">Autor: Niko Josipović, učenik Tehničke škole Ruđera Boškovića</span>
 
 ## Značajke
-* Mogućnost prijevoda datoteke.
-* Preuzimanje prijevoda kao datoteku.
+* Kodiranje i dekodiranje teksta u Morseov kod.
+* Učitavanje i prijevod datoteka s tekstom.
+* Preuzimanje prevedenog sadržaja kao datoteke.
+* Intuitivno korisničko sučelje s mogućnošću zamjene ulaznog i izlaznog formata.
