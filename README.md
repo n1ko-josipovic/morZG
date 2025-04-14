@@ -1,4 +1,4 @@
-# [Morseov Koder/Dekoder](https://n1ko-josipovic.github.io/morse-code/)
+# [Morseov Koder/Dekoder](https://n1ko-josipovic.github.io/morse-translator/)
 
 ## O projektu 
   Ovaj seminarski rad za cilj je imao razviti softversku aplikaciju za kodiranje i dekodiranje Morseova koda, u sklopu predmeta Uvod u računalne mreže. Aplikacija je implementirana korištenjem programskog jezika JavaScript, uz HTML i CSS za stvaranje korisničkog sučelja i poboljšanje vizualnog dizajna. Za više informacija preuzmite <a href="https://github.com/n1ko-josipovic/morse-code/blob/main/public/files/about.pdf" target="_blank">dokument</a> ...
