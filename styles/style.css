@@ -193,7 +193,12 @@ a::after {
 }
 
 .swap-position .material-symbols-outlined {
+  transition: transform 0.3s ease;
   color: white;
+}
+
+.swap-position.rotated .material-symbols-outlined {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 800px) {
@@ -215,5 +220,9 @@ a::after {
 
   .swap-position:hover {
     transform: translate(-50%, -50%) scale(1.05);
+  }
+
+  .swap-position .material-symbols-outlined {
+    transform: rotate(90deg);
   }
 }
