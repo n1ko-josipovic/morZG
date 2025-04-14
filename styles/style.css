@@ -14,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Press Start 2P', monospace;
-  image-rendering: pixelated;
 }
 
 ::-webkit-scrollbar {
@@ -40,8 +39,11 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--text-color);
-  background-color: var(--bg-color);
-  background-image: none;
+  background-color: #111;
+  background-image:
+    linear-gradient(rgba(0, 0, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 255, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
 }
 
 .container {
@@ -96,7 +98,6 @@ body {
 .missive-container .missive-subcontainer img {
   width: 16px;
   height: 16px;
-  image-rendering: pixelated;
 }
 
 textarea {
