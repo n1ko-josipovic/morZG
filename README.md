@@ -7,4 +7,4 @@
 
 ## Dodatne funkcije
 * Prijevod datoteka s tekstom.
-* Preuzimanje prevedenog sadržaja kao datoteke.
+* Preuzimanje prevedenog sadržaja kao datoteka.
