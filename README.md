@@ -6,5 +6,5 @@
 <span style="color:grey">Autor: Niko Josipović, učenik Tehničke škole Ruđera Boškovića</span>
 
 ## Dodatne funkcije
-* Prijevod datoteka s tekstom.
-* Preuzimanje prevedenog sadržaja kao datoteka.
+* Prijevod nekih datoteka.
+* Preuzimanje prevedenog sadržaja kao datoteka u .txt formatu.
