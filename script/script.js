@@ -117,7 +117,7 @@ downloadBtn.addEventListener("click", (e) =>
 {
   const outputText = document.getElementById('output-text').value;
   let name = "Morseov Kod";
-  if (!isInputLatin) name = "Latinski";
+  if (!isInputLatin) name = "Latinica";
 
   if (outputText)
   {
